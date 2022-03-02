@@ -15,12 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import pasta, omlet, sum, buter
+from app.views import recipe
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('omlet/', omlet),
-    path('pasta/', pasta),
-    path('buter/', buter),
-    path("sum/<int:a>/<int:b>/", sum),
+    path('<name>/', recipe),
 ]

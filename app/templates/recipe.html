@@ -6,16 +6,8 @@
 </head>
 <body>
 <ul>
-    {% for x, y in omlet.items %}
-    <li>{{ x }}: {{ y }}</li>
-    {% endfor %}
-
-    {% for x, y in pasta.items %}
-    <li>{{ x }}: {{ y }}</li>
-    {% endfor %}
-
-    {% for x, y in buter.items %}
-    <li>{{ x }}: {{ y }}</li>
+    {% for x, y in recipe.items %}
+    <p>{{ x }}: {{ y }}</p>
     {% endfor %}
 </ul>
 </body>
